@@ -51,6 +51,8 @@ europe_countries = (
     "Vatican City"
 )
 
+print(len(europe_countries`))
+
 # 3 create tuple with all the days of feb (1, 2 ... 28)
 feb_days = (
     1, 2, 3, 4, 5, 6, 7,
