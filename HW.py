@@ -26,7 +26,11 @@ def input_until_lucky(lucky_numbers: tuple) -> int:
     lucky_numbers = get_lucky_numbers(amount)
     guess_count = 0
     while True:
-        user = int(input("please enter your guess: "))
+        try:
+            user = int(input("please enter your guess: "))
+        except ValueError:
+            print("something went wrong, please try again")
+            continue
         guess_count += 1
         if user in lucky_numbers:
             return print(f"the of your guess is {guess_count} times")
