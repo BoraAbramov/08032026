@@ -19,6 +19,7 @@ print(get_lucky_numbers(7)) #for this one I used AI for help
 def input_until_lucky(lucky_numbers: tuple) -> int:
     """
     :param lucky_numbers: receives the tuple of lucky numbers
+    user need to guess one of the lucky numbers
     :return:number of attempts
     """
     amount = int(input("Enter amount of lucky numbers to generate: "))
